@@ -1,0 +1,29 @@
+{% extends 'cawebsite/base.html' %}
+{% load static %}
+
+{% block title %}Team | Cyber Assist{% endblock %}
+
+{% block content %}
+<div class = "container team section-bg" style = "padding-top: 90px; background-color: white;">
+    <div class="section-title" data-aos="fade-up">
+        <h2>Team</h2>
+    </div>
+
+    <div class="row">
+        {% for teamInstance in teamInstances %}
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+            <img src="{{ teamInstance.img.url }}" class="img-fluid" alt="">
+            </div>
+            <div class="member-info">
+            <h4>{{ teamInstance.name }}</h4>
+            <p>{{ teamInstance.title }}</p>
+            <span>{{ teamInstance.bio }}</span>
+            </div>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends 'cawebsite/base.html' %}
+{% load static %}
+
+{% block title %}About | Cyber Assist{% endblock %}
+
+{% block content %}
+<!-- ABOUT -->
+<div class="container about">
+    <div class="section-title" style = "opacity: 100; padding-top: 50px; margin-top: 50px;" data-aos="fade-up">
+    <h2>About Us</h2>
+    </div>
+
+    <div class="row content">
+    <!--
+    <div class="col-lg-12" style = "opacity: 100;" data-aos="fade-up" data-aos-delay="150">
+        <p>Cyber Assist is a 501(c)(3)-pending non-profit organization dedicated to helping those who are separated from or unfamiliar with the internet, making them unable to connect to the rest of the world and vulnerable to online scams and cyber attacks. By recycling and donating electronics to those in need, teaching children and senior citizens about technology and cybersecurity, and building software focused on teaching people about staying safe on the internet, we plan to bridge the gap between these two sectors of our world.<br><br></p>
+    </div>
+    -->
+
+    <div class="col-lg-6" style = "opacity: 100;" data-aos="fade-up" data-aos-delay="150">
+        <!--
+        <p>
+        As technology becomes more and more important to our daily lives, we are a non-profit organization working to provide internet access to all, so that everyone can share the benefits of the electronics we know and love. We are going to do this by:
+        </p>
+        <ul>
+        <li><i class="ri-check-double-line"></i> Donating Refurbishing Electronics to those in Need</li>
+        <li><i class="ri-check-double-line"></i> Teaching Seniors How to Use the Internet</li>
+        <li><i class="ri-check-double-line"></i> Developing an App to Teach Cyber Security to All</li>
+        </ul>
+        -->
+        <p>Cyber Assist is a 501(c)(3)-pending non-profit organization dedicated to helping those who are separated from or unfamiliar with the internet, making them unable to connect to the rest of the world and vulnerable to online scams and cyber attacks. By recycling and donating electronics to those in need, teaching children and senior citizens about technology and cybersecurity, and building software focused on teaching people about staying safe on the internet, we plan to bridge the gap between these two sectors of our world.</p>
+    </div>
+    <div class="col-lg-6 pt-4 pt-lg-0" style = "opacity: 100;" data-aos="fade-up" data-aos-delay="300">
+        <p>
+        Because this problem is often overlooked, there aren’t many good solutions out there right now. Some people are simply unable to afford these devices, while other adults can afford the devices but simply can’t figure out how to use them because they never grew up these devices. 
+        </p>
+        <p>This problem is becoming more and more severe, while the benefits of technology only increase.</p>
+        <a href="https://gofund.me/a4ecc812" class="btn-learn-more">Help Us Solve This Problem!</a>
+    </div>
+    </div>
+</div>
+
+<!-- COUNTS -->
+<div class="container counts">
+    <div class="row">
+        <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+        <img src="static/cawebsite/img/counts-img.svg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="content d-flex flex-column justify-content-center">
+                <div class="row">
+                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <i class="bi bi-emoji-smile"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="75" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>percent of Adults 65 and older <strong>go online on a daily basis.</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <i class="bi bi-journal-richtext"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>million urban or metro areas <strong>still don't access to broadband internet.</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <i class="bi bi-clock"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="58" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>percent of adults age 65 and older have considered technology to have a <strong>positive impact</strong> on society.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                            <i class="bi bi-award"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>percent of adults 65 and older feel the need to have <strong>someone help them use technology.</strong></p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'cawebsite/base.html' %}
+{% load static %}
+
+{% block title %}Branches | Cyber Assist{% endblock %}
+
+{% block content %}
+<div class = "container events more-services" style = "padding-top: 90px; padding-bottom: 70px;">
+    <div class="section-title" style = "opacity: 100;" data-aos="fade-up">
+        <h2>Branches</h2>
+        </div>
+    {% for branchInstance in branchInstances %}
+    <div class="col-md-4 d-flex align-items-stretch">
+        <div class="card" style='background-image: url("{{ branchInstance.img.url }}");' data-aos="fade-up" data-aos-delay="100">
+            <div class="card-body">
+                <h5 class="card-title">{{ branchInstance.title }}</a></h5>
+                <p class="card-text">{{ branchInstance.desc }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <p><br><br><br>Looking to start an official branch of CAN? Read through <a href="https://docs.google.com/document/d/1HRL2Y8KzFAg1IvEq2Qe-g_i2sPjr3l0ExQXKBvNEp3k/edit?usp=sharing">this document</a> and then fill out <a href="https://forms.gle/2M6GF7LZgEDKmtH66">this form</a> to get started!</p>
+</div>
+{% endblock %}

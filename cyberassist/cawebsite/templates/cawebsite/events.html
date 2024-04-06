@@ -1,0 +1,24 @@
+{% extends 'cawebsite/base.html' %}
+{% load static %}
+
+{% block title %}Events | Cyber Assist{% endblock %}
+
+{% block content %}
+<div class = "container events more-services" style = "padding-top: 90px; padding-bottom: 70px;">
+    <div class="section-title" style = "opacity: 100;" data-aos="fade-up">
+        <h2>Recent Events</h2>
+        </div>
+    {% for eventInstance in eventInstances %}
+    <div class="col-md-6 d-flex align-items-stretch">
+        <div class="card" style='background-image: url("{{ eventInstance.img.url }}");' data-aos="fade-up" data-aos-delay="100">
+            <div class="card-body">
+                <h5 class="card-title">{{ eventInstance.title }}</a></h5>
+                <p class="card-text">{{ eventInstance.desc }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'cawebsite/base.html' %}
+{% load static %}
+
+{% block title %}Contact | Cyber Assist{% endblock %}
+
+{% block content %}
+<div class="container contact" style = "padding-top: 90px; flex: 1;">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-about">
+          <h3>Cyber Assist</h3>
+          <p>Feel free to contact us about any thing else you would like to know!</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/cyberassistproject/" class="instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+        <div class="info">
+          <div>
+            <i class="ri-map-pin-line"></i>
+            <p>San Diego, California, USA</p>
+          </div>
+
+          <div>
+            <i class="ri-mail-send-line"></i>
+            <p>cyberassistproject@gmail.com</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
